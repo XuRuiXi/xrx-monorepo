@@ -1,0 +1,27 @@
+{
+  "name": "xrx-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:web": "pnpm --filter web start",
+    "start:xrx-components": "pnpm --filter @self/xrx-components start",
+    "build:xrx-components:cjs": "pnpm --filter @self/xrx-components build:cjs",
+    "build:xrx-components:umd": "pnpm --filter @self/xrx-components build:umd",
+    "test:xrx-components": "pnpm --filter @self/xrx-components test",
+    "start:hk-library": "pnpm --filter hk-library start"
+  },
+  "workspaces": {
+    "packages": [
+      "libs/**",
+      "packages/**",
+      "uis/**"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "4"
+  }
+}
