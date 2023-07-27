@@ -12,6 +12,10 @@ module.exports = {
   ],
   overrides: [],
   parserOptions: {},
+  globals: {
+    $: 'readonly',
+    '__webpack_public_path__': 'readonly',
+  },
   plugins: [
     'html', // html文件检测
   ],
@@ -24,5 +28,6 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": 0, // 简单类型的变量不用声明类型 const a:bumber=12
     "@typescript-eslint/no-var-requires": 0, // 以const module = require()不报错
     "react/prop-types": 0, // 关闭react props的propTypes类型校验
+    "@typescript-eslint/no-empty-function": 0, // 关闭空方法报错
   },
 };

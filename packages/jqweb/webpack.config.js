@@ -7,6 +7,10 @@ const devConfig = {
   devServer: {
     hot: true,
     open: true,
+    // 允许跨域
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     proxy: {
       // 代理
       '/portal': {

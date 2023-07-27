@@ -6,6 +6,7 @@
   "scripts": {
     "build:cjs": "cross-env NODE_ENV=production BUILD_TYPE=cjs webpack --config config/webpack.config.js",
     "build:umd": "cross-env NODE_ENV=production BUILD_TYPE=umd webpack --config config/webpack.config.js",
+    "build:qiankun": "cross-env NODE_ENV=production BUILD_TYPE=qiankun webpack --config config/webpack.config.js",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.config.js",
     "test": "jest",
     "lint-staged": "lint-staged",

@@ -14,6 +14,7 @@ const _Table = () => {
   ];
   return (
     <div>
+      <h1>我是Table组件</h1>
       <Table
         columns={columns}
         dataSource={data}

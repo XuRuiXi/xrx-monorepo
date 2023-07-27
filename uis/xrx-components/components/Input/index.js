@@ -1,8 +1,14 @@
 import React from 'react';
 
 const Input = props => {
+  React.useEffect(() => {
+    console.log('input mount');
+    return () => {
+      console.log('input unmount');
+    };
+  }, []);
   const {
-    onChange,
+    onChange = () => {},
   } = props;
   return <input onChange={onChange} id='input' />;
 };

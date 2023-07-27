@@ -6,6 +6,9 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   devServer: {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
     host: 'localhost',
     // port: 5200,
     compress: true, // 服务器压缩
