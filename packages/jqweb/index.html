@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="http://localhost:8081/index.css" ></link>
+    <link rel="stylesheet" href="./index.css" ></link>
     <style>
       * {
         word-break: break-all;
@@ -25,17 +25,20 @@
     </style>
   </head>
   <body>
-    <a href="/user/info.html">个人信息</a>
+    <a href="./user/info.html">个人信息</a>
+    <img src="/copy/风景.png" alt="" />
     <img src="./assets/风景.png" alt="" />
+    <img src="/abc/风景.png" alt="" />
+    <img src="/upstream/风景.png" alt="" />
     <div id="purehtml-container">12</div>
     <button id="btn">点击</button>
 
     <script>
       let a = [1, 2];
       const b = [...a];
-      // fetch('/portal/MCM-WEB-SERVER/MCM-COMMON-SERVICE-SERVER/callRemoteFunction/getSession').then(res => res.text()).then(res => {
-      //   document.body.innerHTML = res;
-      // });
+      fetch('/portal/MCM-WEB-SERVER/MCM-COMMON-SERVICE-SERVER/callRemoteFunction/getSession').then(res => res.text()).then(res => {
+        console.log(res);
+      });
       document.querySelector("#btn").onclick = function () {
         console.log(window);
       };

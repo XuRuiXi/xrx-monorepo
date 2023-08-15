@@ -15,6 +15,7 @@ module.exports = {
   globals: {
     $: 'readonly',
     '__webpack_public_path__': 'readonly',
+    'myLib': 'readonly'
   },
   plugins: [
     'html', // html文件检测
